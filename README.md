@@ -852,6 +852,407 @@ int main() {
 	return 0;
 }
 
+	OCT 26 
+
+Reverse 9 times table:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,n=1,m,a;
+    cout<<"\nEnter the limit:";
+    cin>>i;
+    cout<<"\nEnter the table's number:";
+    cin>>a;
+    while(i>=n)
+    {
+        cout<<"\n"<<i<<"*"<<a<<"="<<i*a;
+        i--;
+    }
+    return 0;
+}
+
+The Pointless Box:
+
+#include <iostream>
+using namespace std;
+int main(){
+   int i=1;
+   cout << "Enter numbers 1 and 2:" <<endl;
+   while(i<=1){
+      cout<<"You have entered number: "<<i<<endl; i++;
+   while (i<=2){
+      cout<<"You have entered number: "<<i<<endl; i++;
+      }
+   }
+}
+
+
+Input Improvement: ()
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	char input;
+	do{
+	    cout << "Would you like to Quit (Y/N)" <<endl;
+	 cin >> input;
+}while( (input != 'Y') && (input != 'N') );
+	return 0;
+}
+	
+	OCT 31 
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+        int mark[5], i;
+        float sum=0;
+        cout<<"\nEnter marks obtained in Science, Moral Ed, Arabic, Maths , Filipino : \n";
+        for(i=0; i<5; i++)
+        {
+            cout<<"\nEnter mark[ "<<i+1<<" ] ";
+                cin>>mark[i];
+                sum=sum+mark[i];
+        }
+
+        float avg=sum/5;
+        float perc;
+        perc=(sum/500)*100;
+        cout<<"\nAverage Marks of 5 Subjects = [ "<<avg<<" ] \n";
+        cout<<"\nPercentage in 5 Subjects = [ "<<perc<<"% ] \n";
+
+        return 0;
+}
+	NOV 7
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int x = 0; x < 10; x++){
+	    cout <<"X is " << x << "\n";
+	}
+	return 0;
+}
+
+///////////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int x = 10 ; x >= 0; x--){
+	    cout << x << endl;
+	    
+	    if (x == 0)
+	    cout << "You have lift of";
+	}
+	return 0;
+}
+
+///////////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=0; i<5; i++) {
+	for (int j=0; j<5; j++){
+	    cout << "☆";
+	}
+	cout << endl;
+	}
+	return 0;
+}
+
+/////////////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i = 20 ; i <= 24; i++){
+	    
+	    if (i % 2 == 0){
+	    cout << i<<" - even" <<endl;
+	    } else{
+	        cout <<i<<" - odd" <<endl;
+	    }
+	}
+
+	return 0;
+}
+
+////////////
+
+NOV 9: All Exercises
+
+Descending stars, seven lines:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=1; i<=7; i++) {
+	for (int j=i; j<=7; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+	return 0;
+}
+
+Rising Stars, Five lines:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=1; i<6; i++) {
+	for (int j=1; j<= i; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+	return 0;
+}
+
+Rising and Falling Stars:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=1; i<6; i++) {
+	for (int j=1; j<= i; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+	for(int i=1; i<=7; i++) {
+	for (int j=i; j<=7; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+
+	return 0;
+}
+
+
+
+Cubes:
+
+#include <iostream>
+using namespace std;
+
+int main()
+ {
+    int i,ctr;
+    printf("Input number of terms : ");
+    scanf("%d", &ctr);
+    for(i=1;i<=ctr;i++)
+    {
+	 printf("Number is : %d and cube of the %d is :%d \n",i,i, (i*i*i));     
+    }
+ }
+
+Find the 9's:
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, sum = 0;
+    cout << "Find the number and sum of all integer between 100 and 200, divisible by 9:" <<endl;
+    cout << "Numbers between 100 and 200, divisible by 9:" << endl;
+    for (i = 101; i < 200; i++) 
+    {
+        if (i % 9 == 0) 
+        {
+            cout << " " << i;
+            sum += i;
+        }
+    }
+    cout << "\n The sum : " << sum << endl;
+}
+
+Lecture 10
+
+10: Some Counting
+
+#include<iostream>
+using namespace std;
+int main(){
+ for(int i=50; i>=0; i--){
+ cout<<i<<" ";
+ }
+}
+#include<iostream>
+using namespace std;
+int main(){
+ for(int i=30; i<=50; i++){
+ cout<<i<<" ";
+ }
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+ 
+ int i=50;
+ while(i>=10){
+ cout<<i<<" ";
+ i -= 2;
+ }
+
+
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+ 
+ int i=100;
+ while(i<=200){
+ cout<<i<<" ";
+ i += 5;
+ }
+
+
+}
+
+
+11: Odd or Even
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i = 20 ; i <= 24; i++){
+	    
+	    if (i % 2 == 0){
+	    cout << i<<" - even" <<endl;
+	    } else{
+	        cout <<i<<" - odd" <<endl;
+	    }
+	}
+
+	return 0;
+}
+
+12: Iterate through a word
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+string myWord ="ARSH";
+int main() {
+    cout <<myWord.at(0)<<endl;
+    cout <<myWord.at(1) <<endl;
+    cout <<myWord.at(2) <<endl;
+    cout <<myWord.at(3) <<endl;
+	cout << endl;
+	return 0;
+}
+
+13: Seven stars, seven lines
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=0; i<7; i++) {
+	for (int j=0; j<7; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+	return 0;
+}
+NOV 14
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int y;
+cout << "Enter a number you want the table of: " << endl;
+cin >> y;
+while (cin.fail())
+{ cout << "Invalid command enter the number again: " << endl;
+cin.clear();
+cin.ignore(1000, '\n');
+cin >> y;
+}
+for (int x = 0; x <= 10; x++)
+{ cout << y << " x " << x << " = " << y * x << endl; 
+    
+}
+}
+
+////////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=1; i<=5; i++) {
+	for (int j=i; j<=5; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+
+	return 0;
+}
+
+////////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=1; i<6; i++) {
+	for (int j=1; j<= i; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+	return 0;
+}
+
+//////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	for(int i=1; i<=5; i++) {
+	for (int j=i; j<=5; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+for(int i=1; i<6; i++) {
+	for (int j=1; j<= i; j++){
+	    cout << "*";
+	}
+	cout << endl;
+	}
+	return 0;
+}
+
+///////
+	    
+	    
 
 	    
 	    
