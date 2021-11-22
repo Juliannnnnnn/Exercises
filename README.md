@@ -1253,7 +1253,249 @@ for(int i=1; i<6; i++) {
 ///////
 	    
 	    
+NOV 16
 
+1 ///////////
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int i = 1, j=1;
+	while (i <= 5)
+	{ 
+	int j =1;	
+	while (j = 1)
+		{
+			cout << "*"; //print 5 stars
+			j++;
+		}
+		cout << endl;  
+		i++;
+	}
+
+}
+
+2 //////////// 
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int y,x= 1;
+	cout << "Enter a number you want the table of: " << endl;
+	cin >> y;
+	while (cin.fail())
+	{
+		cout << "Invalid command enter the number again: " << endl;
+		cin.ignore(1000, '\n');
+		cin >> y;
+		}
+	while (x <= 10)
+	{
+		cout << y << " x " << x << " = " << y * x << endl;
+		x++;
+	}
+
+}
+
+3 //////////// 
+
+#include<iostream> 
+#include<string> 
+using namespace std;
+int main()
+{
+	int y, z = 1;
+	cout << "enter a number you want the factorial of: " << endl;
+	cin >> y;
+	while (cin.fail() || y <= 0)
+	{
+		cout << "invalid command enter the number again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+		cin >> y;
+	}
+
+	for (int x = 1; x <= y; x++)
+
+		z = z * x;
+	cout << "factorial is: " << z;
+
+}
+
+
+4 /////////////
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int x = 0;
+	int sum = 0;
+	do
+	{
+		if (x % 9 == 0)
+		{
+			cout << "\nNumber is " << x << " ";
+			sum = sum + x;
+			} x++;
+		
+	}
+	while (x <= 200);
+	cout << endl;
+	cout << "\nThe sum is " << sum << endl;
+}
+
+5 /////////////
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int x = 0;
+	int sum = 0;
+	do
+	{
+		if (x % 9 == 0)
+		{
+			cout << "\nNumber is " << x << " ";
+			sum = sum + x;
+			} x++;
+		
+	}
+	while (x <= 200);
+	cout << endl;
+	cout << "\nThe sum is " << sum << endl;
+}
+
+6 ////////////// 
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 20; x <= 24; x++)
+	{
+		if (x %2 !=0)
+			cout << x << " - even" << "\n";
+		else
+			cout << x << " - odd" << "\n";
+	}
+
+}
+
+7 /////////////
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	string m;
+	cout << "Do you want to go to the expo? type Y for yes and N for no" << endl;
+	string mall;
+	cin >> mall;
+	if (mall == "Y" || mall == "y")
+	{
+		cout << "Enjoy" << endl;
+	}
+	else if (mall == "N" || mall == "n")
+	{
+		cout << "Unfortunately its mandatory, you have to go" << endl;
+
+	}
+	else
+	{
+		cout << "Incorrect command" << endl;
+
+	}
+}
+
+NOV 21
+
+#include <iostream>
+using namespace std;
+
+int ages[5];
+	
+	ages[0] = 19;
+	ages[1] = 23;
+	ages[2] = 22;
+	ages[3] = 30;
+	ages[4] = 18;
+
+	return 0;
+}
+
+///////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int array [5] = {19, 23, 22, 30, 18};
+	int array [] = {19, 23, 22, 30, 18};
+	return 0;
+}
+
+////////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int heartRates[8] = {54, 60, 71, 59, 62, 63, 60, 58 };
+	for (int i = 0; i < 8; i++){
+	    cout << heartRates[i] <<endl;
+	}
+	return 0;
+}
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    //declaring and initialising string array for the months
+    string months[12] = { "January", "February", "March","April","May","June","July","August","September","October","November","December" };
+    
+    //displaying the values stored in the months array
+    for (int i = 0; i < 12; i++)
+    {
+        cout << months[i] << endl;
+    }
+}
+///////////
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Enter marks for five subjects" <<endl;
+    int marks[5];
+    int sum=0;
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "grade:" << endl;
+        cin >> marks[i];
+        while (cin.fail() || marks[i]>100 || marks[i]<0) {
+            cout << "invalid command, enter the marks again\n";
+            cin.clear();
+            cin.ignore();
+            cin >> marks[i];
+        }
+
+          sum = sum + marks[i];
+        }
+    cout << "Your average is: " << sum / 5<<endl;
+}
+
+///////
 	    
 	    
 	    
