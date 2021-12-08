@@ -31,153 +31,6 @@ if (percentage < 40)
 }
 return 0;
 }
-#include <iostream>
-#include <math.h>
-using namespace std;
-
-int main() {
- cout <<"The cube of 8 is " << pow(8,3) <<endl;
- 
- cout << "The square-root of 8 is " << sqrt(8) <<endl;
- cout << "The square-root of 8 is " << pow(8,1/2) <<endl;
- 
- cout << "The cube-root of 8 is " << cbrt(8) <<endl;
- cout << "The cube-root of 8 is " << pow(8,1/3) <<endl;
-
-	return 0;
-}
-
-//////
-
-#include <iostream>
-#include <math.h> 
-using namespace std;
-
-int main()
-{
-    cout << "Enter the number:" <<endl;
-   
-    int n;
-
-    double sq = 1, cb = 1;
-   
-    cout << "Enter the number you want to find the Square root and Cube root of : " <<endl;
-    cin >> n;
- 
-    sq = sqrt(n);
-    cb = cbrt(n);
-
-    cout << "The Square Root of the number " << n << " is : " << sq;
-    cout << "The Cube Root of the number " << n << " is : " << cb;
-    cout << " ";
-
-    return 0;
-}
-
-///////
-
-#include <iostream>
-#include <math.h> 
-using namespace std;
-
-
-    void welcome (){
-        cout << "Welcome to BSU" <<endl;
-    }
-int main()
-{
-    welcome();
-    return 0;
-}
-
-///////
-
-#include <iostream>
-using namespace std;
-
-    void welcome();
-       
-int main()
-{
-    welcome();
-    return 0;
-}
-
-void welcome (){
-    
-    cout << "Welcome to my program" <<endl;
-     cout << "End of program" <<endl;
-}
-
-//////
-
-#include <iostream>
-using namespace std;
-
-int main() {
-    int numbers[5] = {1,2,3,4,5};
-
-    cout << "numbers: ";
-
-    for (const int &n : numbers) {
-        cout << n << "  ";
-    }
-
-    cout << "\nThe numbers are: ";
-
-    for (int i = 0; i < 5; ++i) {
-        cout << numbers[i] << "  ";
-    }
-
-    return 0;
-}
-//////
-
-#include <iostream>
-#include <string>
-using namespace std;
-int main()
-{
-	string art[5][5] = {
-		{"_","_","_","_","_"}, 
-	{"_", "O", "_", "O", "_"}, 
-	{"_", "@", "@", "@", "_"}, 
-	{"_", "^", "^", "^", "_"}, 
-	{"_", "V", "V", "V","_" } 
-	};
-
-	for (int x = 0; x < 5; x++)
-	{
-		cout << endl;
-		for (int y = 0; y < 5; y++)
-			cout << art[x][y];
-	}
-	cout << endl;
-}
-   /////////
-
-#include <iostream>
-#include <array>
-using namespace std;
-
-int main()
-{
-	int sum = 0;
-	
-	srand(7);
-	array<int,1000> randomArry;
-	for (int i = 0; i < 1000; i++)
-	{
-
-		randomArry[i] = rand()%50;
-		cout << randomArry[i] << " " <<endl; 
-		if (randomArry[i] == 6)
-		sum++;
-		}
-	cout << "The number 6 appeared: " << sum << " times" << endl;
-}
-
-//////
 
 #include <iostream>
 using namespace std;
@@ -1780,4 +1633,203 @@ return 0;
 
 /////	    
 	    
+#include <iostream>
+#include <math.h> 
+using namespace std;
+
+int main() {
+ cout <<"The cube of 8 is " << pow(8,3) <<endl;
+ 
+ cout << "The square-root of 8 is " << sqrt(8) <<endl;
+ cout << "The square-root of 8 is " << pow(8,1/2) <<endl;
+ 
+ cout << "The cube-root of 8 is " << cbrt(8) <<endl;
+ cout << "The cube-root of 8 is " << pow(8,1/3) <<endl;
+
+	return 0;
+}
+
+//////
+
+#include <iostream>
+#include <math.h> 
+using namespace std;
+
+int main()
+{
+    cout << "Enter the number:" <<endl;
+   
+    int n;
+
+    double sq = 1, cb = 1;
+   
+    cout << "Enter the number you want to find the Square root and Cube root of : " <<endl;
+    cin >> n;
+ 
+    sq = sqrt(n);
+    cb = cbrt(n);
+
+    cout << "The Square Root of the number " << n << " is : " << sq;
+    cout << "The Cube Root of the number " << n << " is : " << cb;
+    cout << " ";
+
+    return 0;
+}
+
+///////
+
+#include <iostream>
+#include <math.h> 
+using namespace std;
+
+
+    void welcome (){
+        cout << "Welcome to BSU" <<endl;
+    }
+int main()
+{
+    welcome();
+    return 0;
+}
+
+///////
+
+#include <iostream>
+using namespace std;
+
+    void welcome();
+       
+int main()
+{
+    welcome();
+    return 0;
+}
+
+void welcome (){
+    
+    cout << "Welcome to my program" <<endl;
+     cout << "End of program" <<endl;
+}
+
+//////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numbers[5] = {1,2,3,4,5};
+
+    cout << "numbers: ";
+
+    for (const int &n : numbers) {
+        cout << n << "  ";
+    }
+
+    cout << "\nThe numbers are: ";
+
+    for (int i = 0; i < 5; ++i) {
+        cout << numbers[i] << "  ";
+    }
+
+    return 0;
+}
+//////
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	string art[5][5] = {
+		{"_","_","_","_","_"}, 
+	{"_", "O", "_", "O", "_"}, 
+	{"_", "@", "@", "@", "_"}, 
+	{"_", "^", "^", "^", "_"}, 
+	{"_", "V", "V", "V","_" } 
+	};
+
+	for (int x = 0; x < 5; x++)
+	{
+		cout << endl;
+		for (int y = 0; y < 5; y++)
+			cout << art[x][y];
+	}
+	cout << endl;
+}
+   /////////
+
+#include <iostream>
+#include <array>
+using namespace std;
+
+int main()
+{
+	int sum = 0;
+	
+	srand(7);
+	array<int,1000> randomArry;
+	for (int i = 0; i < 1000; i++)
+	{
+
+		randomArry[i] = rand()%50;
+		cout << randomArry[i] << " " <<endl; 
+		if (randomArry[i] == 6)
+		sum++;
+		}
+	cout << "The number 6 appeared: " << sum << " times" << endl;
+}
+
+//////
+
+#include <iostream>
+using namespace std;
+ 
+int largest(int arr[], int n)
+{
+    int i;
+     
+    int max = arr[0];
+ 
+    for (i = 1; i < n; i++)
+        if (arr[i] > max)
+            max = arr[i];
+ 
+    return max;
+}
+ 
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout << "Largest in given array is "
+         << largest(arr, n);
+    return 0;
+}
+
+////
+
+#include <iostream>
+using namespace std;
+
+
+int arr[10], mn;
+
+
+int main()
+{
+    for (int i = 0; i < 10; i++) {
+        cin >> arr[i];
+    }
+    mn = arr[0];
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] < mn) {
+            mn = arr[i];
+        }
+        
+    }
+    cout << "Smallest number: " << mn;
+    return 0;
+}
+
+/////
 	    
