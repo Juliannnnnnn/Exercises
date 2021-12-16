@@ -1970,3 +1970,36 @@ int main()
     
     return 0;
 }
+
+/////
+	    
+#include <iostream>
+using namespace std;
+
+	string greetings(int time){
+	    
+	    if(time < 12){
+	        return "Good Morning";
+	        if(time <= 17){
+	        return "Good Afternoon";
+	        if(time <= 21){
+	        return "Good Evening";
+	        if(time <= 25){
+	        return "Good Night";
+	    }else{
+	        return "Invalid";
+	        
+	    }
+	    }
+	        }
+	    }
+	}
+	 int main() {
+	     cout << "What time is it?" <<endl;
+	     int userInput;
+	     cin >> userInput;
+	     
+	     cout << greetings(userInput) <<endl;
+	
+	return 0;
+}	    
