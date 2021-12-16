@@ -1929,3 +1929,44 @@ int main() {
 
 }
 ////
+
+#include<iostream>
+#include<math.h>
+ 
+using namespace std;
+ 
+int main()
+{
+    
+float sq,n;
+cout<<"Enter the number:";
+cin>>n;
+sq=sqrt(n);
+cout<<"The root value of "<<n<<" is "<<sq;
+return 0;
+}
+
+//////////
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int exponent;
+    float base, result = 1;
+
+    cout << "Enter base and exponent respectively:  ";
+    cin >> base >> exponent;
+
+    cout << base << "^" << exponent << " = ";
+
+    while (exponent != 0) {
+        result *= base;
+        --exponent;
+    }
+
+    cout << result;
+    
+    return 0;
+}
